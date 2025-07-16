@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Ad Block</title>
+        <link rel="stylesheet" href="popup.css" />
+    </head>
+    <body>
+        <div class="container">
+            <h1>Ad Block</h1>
+            <div class="toggle-section">
+                <label for="toggle">Ad Blocking:</label>
+                <input
+                    type="checkbox"
+                    id="toggle"
+                    checked
+                />
+            </div>
+            <div class="stats">
+                <p>
+                    Ads Blocked:
+                    <div class="websites">
+                    </div>
+                </p>
+            </div>
+            <button id="options-btn">Open Settings</button>
+        </div>
+        <script src="/src/popup.js"></script>
+    </body>
+</html>
