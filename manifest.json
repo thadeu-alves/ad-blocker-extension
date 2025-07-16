@@ -1,0 +1,28 @@
+{
+    "manifest_version": 3,
+    "name": "Ad Block",
+    "version": "1.0.4",
+    "description": "A simple ad blocker.",
+    "permissions": [
+        "declarativeNetRequest",
+        "declarativeNetRequestFeedback",
+        "storage",
+        "tabs"
+    ],
+    "host_permissions": ["<all_urls>"],
+    "declarative_net_request": {
+        "rule_resources": [
+            {
+                "id": "ruleset_1",
+                "enabled": true,
+                "path": "rules.json"
+            }
+        ]
+    },
+    "action": {
+        "default_popup": "src/popup.html"
+    },
+    "background": {
+        "service_worker": "src/background.js"
+    }
+}
