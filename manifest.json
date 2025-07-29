@@ -3,6 +3,12 @@
     "name": "Ad Block",
     "version": "0.1.0",
     "description": "A simple ad blocker.",
+    "content_scripts": [
+        {
+            "matches": ["https://x.com/*"],
+            "js": ["./src/twitter.js"]
+        }
+    ],
     "permissions": [
         "declarativeNetRequest",
         "declarativeNetRequestFeedback",
